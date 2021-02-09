@@ -16,6 +16,9 @@
 		C99BFB9825D2DF4700C531CE /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB9725D2DF4700C531CE /* CityResponse.swift */; };
 		C99BFBA325D2DF9500C531CE /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFBA225D2DF9500C531CE /* CityRepository.swift */; };
 		C99BFBB525D2DFC000C531CE /* Converters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFBB425D2DFC000C531CE /* Converters.swift */; };
+		C99BFBC725D2E03400C531CE /* PlatformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFBC625D2E03400C531CE /* PlatformProvider.swift */; };
+		C99BFBD125D2E05500C531CE /* CityStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFBD025D2E05500C531CE /* CityStorageRepository.swift */; };
+		C99BFBE025D313B900C531CE /* ReactiveHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFBDF25D313B900C531CE /* ReactiveHelpers.swift */; };
 		C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */; };
 		C9F7C8B325D2C1F7009FE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */; };
 		C9F7C8B625D2C1F7009FE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */; };
@@ -146,6 +149,9 @@
 		C99BFB9725D2DF4700C531CE /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
 		C99BFBA225D2DF9500C531CE /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
 		C99BFBB425D2DFC000C531CE /* Converters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converters.swift; sourceTree = "<group>"; };
+		C99BFBC625D2E03400C531CE /* PlatformProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformProvider.swift; sourceTree = "<group>"; };
+		C99BFBD025D2E05500C531CE /* CityStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStorageRepository.swift; sourceTree = "<group>"; };
+		C99BFBDF25D313B900C531CE /* ReactiveHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveHelpers.swift; sourceTree = "<group>"; };
 		C9F7C8A625D2C1F1009FE59B /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -273,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				C99BFBA225D2DF9500C531CE /* CityRepository.swift */,
+				C99BFBD025D2E05500C531CE /* CityStorageRepository.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -364,6 +371,7 @@
 			children = (
 				C9F7C91C25D2C5D0009FE59B /* Presentation.h */,
 				C9F7C91D25D2C5D0009FE59B /* Info.plist */,
+				C99BFBDF25D313B900C531CE /* ReactiveHelpers.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -386,6 +394,7 @@
 				C99BFBB425D2DFC000C531CE /* Converters.swift */,
 				C9F7C94425D2C5E7009FE59B /* Platform.h */,
 				C9F7C94525D2C5E7009FE59B /* Info.plist */,
+				C99BFBC625D2E03400C531CE /* PlatformProvider.swift */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -646,6 +655,7 @@
 					};
 					C9F7C91925D2C5D0009FE59B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					C9F7C92125D2C5D0009FE59B = {
 						CreatedOnToolsVersion = 12.4;
@@ -805,6 +815,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99BFBE025D313B900C531CE /* ReactiveHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,9 +833,11 @@
 			files = (
 				C99BFBA325D2DF9500C531CE /* CityRepository.swift in Sources */,
 				C99BFB8325D2DE9500C531CE /* SessionNetworkService.swift in Sources */,
+				C99BFBD125D2E05500C531CE /* CityStorageRepository.swift in Sources */,
 				C99BFB9825D2DF4700C531CE /* CityResponse.swift in Sources */,
 				C99BFBB525D2DFC000C531CE /* Converters.swift in Sources */,
 				C99BFB8D25D2DEED00C531CE /* StorageService.swift in Sources */,
+				C99BFBC725D2E03400C531CE /* PlatformProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1238,6 +1251,7 @@
 		C9F7C93225D2C5D0009FE59B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1254,6 +1268,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.organization-name.Presentation";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1264,6 +1279,7 @@
 		C9F7C93325D2C5D0009FE59B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
