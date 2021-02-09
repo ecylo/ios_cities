@@ -31,6 +31,7 @@
 		C99BFC8525D3199600C531CE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC8425D3199600C531CE /* CitiesViewController.swift */; };
 		C99BFC9725D319AA00C531CE /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC9625D319AA00C531CE /* CityCell.swift */; };
 		C99BFCA225D319C800C531CE /* UIImageViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFCA125D319C800C531CE /* UIImageViewHelpers.swift */; };
+		C99BFCAC25D31A1D00C531CE /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFCAB25D31A1D00C531CE /* CityViewController.swift */; };
 		C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */; };
 		C9F7C8B325D2C1F7009FE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */; };
 		C9F7C8B625D2C1F7009FE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */; };
@@ -176,6 +177,7 @@
 		C99BFC8425D3199600C531CE /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		C99BFC9625D319AA00C531CE /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		C99BFCA125D319C800C531CE /* UIImageViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewHelpers.swift; sourceTree = "<group>"; };
+		C99BFCAB25D31A1D00C531CE /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		C9F7C8A625D2C1F1009FE59B /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			children = (
 				C99BFC8425D3199600C531CE /* CitiesViewController.swift */,
 				C99BFC9625D319AA00C531CE /* CityCell.swift */,
+				C99BFCAB25D31A1D00C531CE /* CityViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */,
 				C99BFC9725D319AA00C531CE /* CityCell.swift in Sources */,
 				C99BFC6625D318BE00C531CE /* DependenciesFactory.swift in Sources */,
+				C99BFCAC25D31A1D00C531CE /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
