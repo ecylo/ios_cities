@@ -28,6 +28,9 @@
 		C99BFC3825D3173100C531CE /* VisitorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC3725D3173100C531CE /* VisitorsPresenter.swift */; };
 		C99BFC6625D318BE00C531CE /* DependenciesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC6525D318BE00C531CE /* DependenciesFactory.swift */; };
 		C99BFC7025D318E900C531CE /* PresentationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC6F25D318E900C531CE /* PresentationProvider.swift */; };
+		C99BFC8525D3199600C531CE /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC8425D3199600C531CE /* CitiesViewController.swift */; };
+		C99BFC9725D319AA00C531CE /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFC9625D319AA00C531CE /* CityCell.swift */; };
+		C99BFCA225D319C800C531CE /* UIImageViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFCA125D319C800C531CE /* UIImageViewHelpers.swift */; };
 		C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */; };
 		C9F7C8B325D2C1F7009FE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */; };
 		C9F7C8B625D2C1F7009FE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */; };
@@ -170,6 +173,9 @@
 		C99BFC3725D3173100C531CE /* VisitorsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorsPresenter.swift; sourceTree = "<group>"; };
 		C99BFC6525D318BE00C531CE /* DependenciesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesFactory.swift; sourceTree = "<group>"; };
 		C99BFC6F25D318E900C531CE /* PresentationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationProvider.swift; sourceTree = "<group>"; };
+		C99BFC8425D3199600C531CE /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		C99BFC9625D319AA00C531CE /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		C99BFCA125D319C800C531CE /* UIImageViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewHelpers.swift; sourceTree = "<group>"; };
 		C9F7C8A625D2C1F1009FE59B /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -321,6 +327,23 @@
 			name = PresentationData;
 			sourceTree = "<group>";
 		};
+		C99BFC8325D3197400C531CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C99BFC8425D3199600C531CE /* CitiesViewController.swift */,
+				C99BFC9625D319AA00C531CE /* CityCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C99BFCA025D319BA00C531CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C99BFCA125D319C800C531CE /* UIImageViewHelpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		C9F7C89D25D2C1F1009FE59B = {
 			isa = PBXGroup;
 			children = (
@@ -356,11 +379,13 @@
 		C9F7C8A825D2C1F1009FE59B /* Cities */ = {
 			isa = PBXGroup;
 			children = (
+				C99BFCA025D319BA00C531CE /* Helpers */,
+				C99BFC8325D3197400C531CE /* Views */,
 				C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */,
+				C99BFC6525D318BE00C531CE /* DependenciesFactory.swift */,
 				C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */,
 				C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */,
 				C9F7C8B725D2C1F7009FE59B /* Info.plist */,
-				C99BFC6525D318BE00C531CE /* DependenciesFactory.swift */,
 			);
 			path = Cities;
 			sourceTree = "<group>";
@@ -813,7 +838,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99BFCA225D319C800C531CE /* UIImageViewHelpers.swift in Sources */,
+				C99BFC8525D3199600C531CE /* CitiesViewController.swift in Sources */,
 				C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */,
+				C99BFC9725D319AA00C531CE /* CityCell.swift in Sources */,
 				C99BFC6625D318BE00C531CE /* DependenciesFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
