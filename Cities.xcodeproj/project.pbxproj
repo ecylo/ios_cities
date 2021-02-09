@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C99BFB5225D2C73B00C531CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB5125D2C73B00C531CE /* Error.swift */; };
+		C99BFB5C25D2C75900C531CE /* CityDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB5B25D2C75900C531CE /* CityDetails.swift */; };
 		C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */; };
 		C9F7C8B325D2C1F7009FE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */; };
 		C9F7C8B625D2C1F7009FE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 		C9F7C95425D2C5E7009FE59B /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F7C94425D2C5E7009FE59B /* Platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9F7C95725D2C5E7009FE59B /* Platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F7C94225D2C5E7009FE59B /* Platform.framework */; };
 		C9F7C95825D2C5E7009FE59B /* Platform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9F7C94225D2C5E7009FE59B /* Platform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9F7C97925D2C675009FE59B /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C97825D2C675009FE59B /* CityRepository.swift */; };
+		C9F7C98425D2C69C009FE59B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C98325D2C69C009FE59B /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C99BFB5125D2C73B00C531CE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		C99BFB5B25D2C75900C531CE /* CityDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetails.swift; sourceTree = "<group>"; };
 		C9F7C8A625D2C1F1009FE59B /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +161,8 @@
 		C9F7C94A25D2C5E7009FE59B /* PlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C95125D2C5E7009FE59B /* PlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformTests.swift; sourceTree = "<group>"; };
 		C9F7C95325D2C5E7009FE59B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F7C97825D2C675009FE59B /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		C9F7C98325D2C69C009FE59B /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +302,8 @@
 		C9F7C8F425D2C5C3009FE59B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C9F7C98225D2C693009FE59B /* Models */,
+				C9F7C97725D2C669009FE59B /* Repositories */,
 				C9F7C8F525D2C5C3009FE59B /* Domain.h */,
 				C9F7C8F625D2C5C3009FE59B /* Info.plist */,
 			);
@@ -343,6 +353,24 @@
 				C9F7C95325D2C5E7009FE59B /* Info.plist */,
 			);
 			path = PlatformTests;
+			sourceTree = "<group>";
+		};
+		C9F7C97725D2C669009FE59B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C9F7C97825D2C675009FE59B /* CityRepository.swift */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		C9F7C98225D2C693009FE59B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9F7C98325D2C69C009FE59B /* City.swift */,
+				C99BFB5B25D2C75900C531CE /* CityDetails.swift */,
+				C99BFB5125D2C73B00C531CE /* Error.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +593,7 @@
 					};
 					C9F7C8F225D2C5C3009FE59B = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					C9F7C8FA25D2C5C3009FE59B = {
 						CreatedOnToolsVersion = 12.4;
@@ -709,6 +738,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F7C98425D2C69C009FE59B /* City.swift in Sources */,
+				C99BFB5225D2C73B00C531CE /* Error.swift in Sources */,
+				C9F7C97925D2C675009FE59B /* CityRepository.swift in Sources */,
+				C99BFB5C25D2C75900C531CE /* CityDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +974,7 @@
 		C9F7C8D125D2C1F7009FE59B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -959,6 +993,7 @@
 		C9F7C8D225D2C1F7009FE59B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1057,6 +1092,7 @@
 		C9F7C90B25D2C5C3009FE59B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1073,6 +1109,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.organization-name.Domain";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1083,6 +1120,7 @@
 		C9F7C90C25D2C5C3009FE59B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
