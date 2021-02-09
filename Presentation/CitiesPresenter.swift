@@ -35,12 +35,15 @@ final class CitiesPresenter: CitiesPresenting {
 
 	private let connector: RootConnector & AlertConnector & LoadingConnector
 	private let getCitiesUseCase: (Bool, @escaping (Result<[City], Domain.Error>) -> Void) -> Void
+	private let conversion: (City) -> CityPresentationData
 	private let isLoading: BehaviorSubject<Bool> = BehaviorSubject(false)
 
 	init(connector: RootConnector & AlertConnector & LoadingConnector,
-		getCitiesUseCase: @escaping (Bool, @escaping (Result<[City], Domain.Error>) -> Void) -> Void){
+		getCitiesUseCase: @escaping (Bool, @escaping (Result<[City], Domain.Error>) -> Void) -> Void,
+		conversion: @escaping (City) -> CityPresentationData = convert(_:)) {
 		self.connector = connector
 		self.getCitiesUseCase = getCitiesUseCase
+		self.conversion = conversion
 	}
 
 	func transform(_ input: CitiesPresenterInput) -> CitiesPresenterOutput {
@@ -64,8 +67,8 @@ final class CitiesPresenter: CitiesPresenting {
 		}
 
 		let citiesPresentationData = BehaviorSubject<[CityPresentationData]>([])
-		cities.bind { c in
-			let presentationData = c.map { convert($0) }
+		cities.bind { [conversion] city in
+			let presentationData = city.map { conversion($0) }
 			citiesPresentationData.value = presentationData
 		}
 
