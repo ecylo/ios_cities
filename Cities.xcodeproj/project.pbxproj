@@ -10,6 +10,7 @@
 		C99BFB5225D2C73B00C531CE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB5125D2C73B00C531CE /* Error.swift */; };
 		C99BFB5C25D2C75900C531CE /* CityDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB5B25D2C75900C531CE /* CityDetails.swift */; };
 		C99BFB6625D2C7D600C531CE /* CityStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB6525D2C7D600C531CE /* CityStorageRepository.swift */; };
+		C99BFB7025D2C7ED00C531CE /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BFB6F25D2C7ED00C531CE /* UseCaseProvider.swift */; };
 		C9F7C8AA25D2C1F1009FE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */; };
 		C9F7C8B325D2C1F7009FE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */; };
 		C9F7C8B625D2C1F7009FE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C8B425D2C1F7009FE59B /* LaunchScreen.storyboard */; };
@@ -134,6 +135,7 @@
 		C99BFB5125D2C73B00C531CE /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		C99BFB5B25D2C75900C531CE /* CityDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetails.swift; sourceTree = "<group>"; };
 		C99BFB6525D2C7D600C531CE /* CityStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStorageRepository.swift; sourceTree = "<group>"; };
+		C99BFB6F25D2C7ED00C531CE /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		C9F7C8A625D2C1F1009FE59B /* Cities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C8A925D2C1F1009FE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C8B225D2C1F7009FE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		C9F7C8F425D2C5C3009FE59B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				C99BFB6F25D2C7ED00C531CE /* UseCaseProvider.swift */,
 				C9F7C98225D2C693009FE59B /* Models */,
 				C9F7C97725D2C669009FE59B /* Repositories */,
 				C9F7C8F525D2C5C3009FE59B /* Domain.h */,
@@ -745,6 +748,7 @@
 				C9F7C98425D2C69C009FE59B /* City.swift in Sources */,
 				C99BFB5225D2C73B00C531CE /* Error.swift in Sources */,
 				C9F7C97925D2C675009FE59B /* CityRepository.swift in Sources */,
+				C99BFB7025D2C7ED00C531CE /* UseCaseProvider.swift in Sources */,
 				C99BFB5C25D2C75900C531CE /* CityDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
